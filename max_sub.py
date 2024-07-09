@@ -9,8 +9,8 @@ def maxSub(arr):
   return maxSubArray
 
 def maxSubPrint(arr):
-  maxSubArray = float('-inf')
-  curMax = 0
+  maxSubArray = float('-inf') # storing max sum till current position
+  curMax = 0 #
   ans_start = -1
   ans_end =  -1
 
@@ -26,7 +26,8 @@ def maxSubPrint(arr):
       
     if curMax < 0:
       curMax = 0
-  print(arr[ans_start: ans_end:])
+
+  print(arr[ans_start: ans_end+1:])
   return maxSubArray
 
 
